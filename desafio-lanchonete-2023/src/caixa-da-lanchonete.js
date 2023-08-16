@@ -61,8 +61,8 @@ class CaixaDaLanchonete {
 export { CaixaDaLanchonete };
 
 const caixa = new CaixaDaLanchonete();
-const formaDePagamento = 'dinheiro';
-const itens = ['cafe,1', 'sanduiche,1', 'queijo,1'];
+const formaDePagamento = 'credito';
+const itens = ['combo2,1', 'sanduiche,1', 'combo1,1'];
 
 const resultado = caixa.calcularValorDaCompra(formaDePagamento, itens);
 console.log(resultado);
