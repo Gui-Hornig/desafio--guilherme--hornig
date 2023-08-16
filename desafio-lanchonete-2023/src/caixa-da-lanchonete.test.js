@@ -45,7 +45,7 @@ describe('CaixaDaLanchonete', () => {
         ['chantily', 'dinheiro', 'Item extra não pode ser pedido sem o principal', ['chantily,1']],
         ['queijo', 'credito', 'Item extra não pode ser pedido sem o principal', ['queijo,1']],
         ['chantily com outro item', 'credito', 'Item extra não pode ser pedido sem o principal', ['chantily,1', 'sanduiche,1']],
-        ['queijo com outro item', 'debito', 'Item extra não pode ser pedido sem o principal', ['cafe,1', 'queijo,1']],
+        ['queijo com outro item', 'debito', 'Item extra não pode ser pedido sem o principal', ['queijo,1','cafe,1']],
     ])('compra %p em %p deve resultar em %p', (_, formaDePagamento, resultadoEsperado, itens) =>
         validaTeste(formaDePagamento, resultadoEsperado, itens));
 });
